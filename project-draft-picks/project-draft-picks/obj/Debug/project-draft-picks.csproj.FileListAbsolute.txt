@@ -1,0 +1,7 @@
+C:\schooldata\semester3\AdvancedProgramming\weel4\Project-1\Project1\project-draft-picks\project-draft-picks\obj\Debug\project-draft-picks.csprojResolveAssemblyReference.cache
+C:\schooldata\semester3\AdvancedProgramming\weel4\Project-1\Project1\project-draft-picks\project-draft-picks\obj\Debug\project-draft-picks.csproj.CoreCompileInputs.cache
+C:\schooldata\semester3\AdvancedProgramming\weel4\Project-1\Project1\project-draft-picks\project-draft-picks\bin\Debug\project-draft-picks.exe.config
+C:\schooldata\semester3\AdvancedProgramming\weel4\Project-1\Project1\project-draft-picks\project-draft-picks\bin\Debug\project-draft-picks.exe
+C:\schooldata\semester3\AdvancedProgramming\weel4\Project-1\Project1\project-draft-picks\project-draft-picks\bin\Debug\project-draft-picks.pdb
+C:\schooldata\semester3\AdvancedProgramming\weel4\Project-1\Project1\project-draft-picks\project-draft-picks\obj\Debug\project-draft-picks.exe
+C:\schooldata\semester3\AdvancedProgramming\weel4\Project-1\Project1\project-draft-picks\project-draft-picks\obj\Debug\project-draft-picks.pdb
