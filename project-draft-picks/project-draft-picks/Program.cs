@@ -83,8 +83,10 @@ namespace project_draft_picks
                 {
 
                     outputPlayers(ref playerNames, ref college, ref playerCost, ref position);
-                    getPlayer(out playerRow, out playerCol, ref playerNames);
-                    if (playerRow < 3)
+                    getPlayer(out playerRow, out playerCol, ref playerNames, ref BUDGET);
+
+
+                    if (playerCol < 3)
                     {
                         count = count + 1;
                         
@@ -108,7 +110,7 @@ namespace project_draft_picks
                     continuePick = continueProgram();
 
                 } while (continuePick);
-                
+
 
                 draftPick.Add(new DraftPick(playerNames[playerRow, playerCol], college[playerRow, playerCol], position[playerRow, playerCol], playerCost[playerRow, playerCol]));
 
@@ -131,13 +133,15 @@ namespace project_draft_picks
                     }
                     Console.WriteLine("\nBudget used: " + EFFECTIVE_BUDGET);
                     
-                    if (EFFECTIVE_BUDGET < COST_EFFECTIVE && count == 3)
+                    if (EFFECTIVE_BUDGET < COST_EFFECTIVE && count >= 3)
                     {
                         Console.WriteLine(message);
                     }
                     
                     endProgram(out startkey);
+                    EFFECTIVE_BUDGET = 0;
                     BUDGET = 95000000;
+                    count = 0;
                 }
                 
                 playersList.Clear();
@@ -246,11 +250,13 @@ namespace project_draft_picks
             return budget;
 
         }*/
-        public static void getPlayer(out int playerRow, out int playerCol, ref string[,] players)
+        public static void getPlayer(out int playerRow, out int playerCol, ref string[,] players, ref double budget)
         {
             string playerSelection;
 
-            Console.WriteLine("Select any player from the table above to add to your draft list.\n");
+            Console.WriteLine("Remaining Budget: " + budget);
+            Console.WriteLine("\nSelect any player from the table above to add to your draft list.\n" +
+                "The first number represents the row and second number represents the players rank, 0 being the highest.");
             Console.WriteLine("Please select by entering the corresponding number to each player: ");
 
             playerSelection = Console.ReadLine();
